@@ -81,3 +81,6 @@ Here's a list of a few improvements this Application would welcome:
  - Sending the Logs to a database so they can be analysed
  - Pagination system for the History table
  - More Integration tests to test edge cases
+
+## Task description
+[InfoTrack Project Waterloo.pdf](https://github.com/rafschryn/InfoTrack-SearchCount/files/14234087/InfoTrack.Project.Waterloo.pdf)
