@@ -1,0 +1,39 @@
+<form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="search-term-input">Search term</label>
+      <input type="text" id="search-term-input" formControlName="searchTerm">
+      <div class="error-message" *ngIf="searchForm.get('searchTerm')?.errors?.required && searchForm.get('searchTerm')?.touched">
+        Search term is required.
+      </div>
+    </div>
+    <div>
+      <label for="url-input">URL</label>
+      <input type="text" id="url-input" formControlName="url">
+      <div class="error-message" *ngIf="searchForm.get('url')?.errors?.required && searchForm.get('url')?.touched">
+        URL is required.
+      </div>
+      <div class="error-message" *ngIf="searchForm.get('url')?.errors?.pattern && searchForm.get('url')?.touched">
+        Please enter a valid URL.
+      </div>
+    </div>
+    <div>
+      <label for="search-engine-dropdown">Search Engine</label>
+      <select id="search-engine-dropdown" formControlName="searchEngine">
+        <option ngbDropdownItem *ngFor="let searchEngine of searchEngines" [value]="searchEngine">{{searchEngine}}</option>
+        </select>
+    </div>
+    <button type="submit" [disabled]="searchForm.invalid">Submit</button>
+  </form>
+
+  <ng-container *ngIf="result && result.indices.length > 0 && !loading">
+    <div class="results-container">
+      <label for="result-item">Result placement: </label>
+      <span id="result-item" class="result-item" *ngFor="let index of result.indices">{{index}}</span>
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="loading">
+    <div class="results-container">
+      <a for="result-item">Searching... </a>
+    </div>
+  </ng-container>

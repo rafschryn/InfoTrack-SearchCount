@@ -1,0 +1,170 @@
+/* Container styles to center the form on the page */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px; /* Adjust based on your preference */
+    margin: 2rem auto; /* Centers the form with automatic margins */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #ffffff; /* Adjust the background color as needed */
+  }
+  
+  /* Style for input fields and dropdown */
+  input[type="text"], select {
+    width: 100%; /* Full width of the container */
+    padding: 0.5rem;
+    margin-top: 0.25rem; /* Space between label and input */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 4px; /* Rounded corners */
+  }
+
+  input.ng-invalid.ng-touched {
+    border: 1px solid red;
+  }
+  
+  /* Style the validation message to be red */
+  div.ng-invalid.ng-touched {
+    color: red;
+  }
+
+  .error-message {
+    color: red;
+  }
+  
+  button {
+    margin-right: 10px;
+  }
+
+  /* Button styling */
+  button[type="submit"] {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff; /* Bootstrap primary color, adjust as needed */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+
+  button[type="submit"]:disabled {
+    background-color: #999797; /* Gray color when disabled */
+    cursor: not-allowed; /* Optional: Changes the cursor to indicate the button is not clickable */
+  }
+  
+  /* Adjust the label styles if needed */
+  label {
+    font-weight: bold; /* Make labels stand out */
+  }
+  
+  /* Style for the result link, adjust as needed */
+  a {
+    display: block; /* Make the link block-level to occupy its own line */
+    margin-top: 1rem; /* Space above the result link */
+    color: #007bff; /* Link color, adjust as needed */
+    text-decoration: none; /* No underline */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+
+  /* Container for the results */
+.results-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem; /* Space between badges */
+    margin-top: 1rem; /* Space above the results container */
+    justify-content: center; /* Center badges if you prefer */
+  }
+  
+  /* Style for each result item */
+  .result-item {
+    padding: 0.25rem 0.75rem;
+    background-color: #007bff; /* Adjust the background color as needed */
+    color: white;
+    border-radius: 20px; /* Rounded corners for a badge-like look */
+    font-weight: bold;
+    text-align: center;
+  }
+
+  /* Center the navbar */
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+/* Style for each nav item */
+.nav-tabs li {
+  margin: 0 10px; /* Adjust spacing between nav items */
+}
+
+/* Style for nav links */
+.nav-tabs button {
+  background-color: transparent;
+  border: none;
+  color: #007bff; /* Bootstrap primary color */
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-tabs button:hover,
+.nav-tabs button:focus {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: #ffffff;
+  text-decoration: none;
+  outline: none;
+}
+
+/* Center the table on the page */
+table {
+  width: 80%; /* Adjust the width as needed */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  border-collapse: collapse; /* Collapse borders for a clean look */
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Soft shadow around the table */
+  background-color: #fff; /* Background color for the table */
+}
+
+/* Style the table headers */
+th {
+  background-color: #007bff; /* Adjust the color as needed */
+  color: #ffffff;
+  text-align: left;
+  padding: 12px 15px; /* Adjust padding for spacing */
+  font-size: 14px; /* Adjust font size as needed */
+}
+
+/* Style the table data cells */
+td {
+  padding: 12px 15px; /* Adjust padding for spacing */
+  border-bottom: 1px solid #dddddd; /* Light border for each row */
+  font-size: 14px; /* Adjust font size as needed */
+}
+
+/* Style for alternating row colors for better readability */
+tbody tr:nth-child(odd) {
+  background-color: #f3f3f3; /* Light color for odd rows */
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1; /* Slightly different color on hover */
+}
+
+/* :host {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 0.5em;
+  z-index: 1200;
+} */

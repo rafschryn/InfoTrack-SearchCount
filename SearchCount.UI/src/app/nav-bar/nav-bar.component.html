@@ -1,0 +1,9 @@
+<ul ngbNav #nav="ngbNav" class="nav-tabs">
+  <li ngbNavItem>
+    <button ngbNavLink [routerLink]="['/']">Search Counts</button>
+  </li>
+  <li ngbNavItem>
+    <button ngbNavLink [routerLink]="['/search-count-history']">History</button>
+  </li>
+</ul>
+<div [ngbNavOutlet]="nav"></div>
