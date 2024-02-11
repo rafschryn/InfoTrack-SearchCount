@@ -48,12 +48,12 @@ export class SearchCountComponent implements OnInit {
       this.result = data;
       this.loading = false;
 
-      this.toastr.success("Success", `${searchCountRequest.searchEngine} search successful`, {closeButton: true});
+      this.toastr.success(`${searchCountRequest.searchEngine} search successful`, "Success", {closeButton: true});
       },
       error: (e) => {
         this.loading = false;
 
-        this.toastr.error("Error", `Something went wrong while searching ${searchCountRequest.searchEngine}`, {closeButton: true});
+        this.toastr.error(`Something went wrong while searching ${searchCountRequest.searchEngine}`, "Error", {closeButton: true});
       } 
     });
   }
