@@ -1,4 +1,4 @@
-# InfoTrack-SearchCount
+# SearchCount
 This Application can be used to 'scrap' Google and Bing searches without using their APIs, which is against their Terms of Services and your IP might get blocked.
 Use this application at your own risks.
 
